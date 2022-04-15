@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/tothefor?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+server:
+  port: 8081
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+      logic-delete-value: true # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: false # 逻辑未删除值(默认为 0)
+
+  type-aliases-package: com.tothefor.pojo.entity # 哪一个包里面的类可以在mapper文件中直接简写为类名
+  mapper-locations: classpath:/mapper/*.xml # 找mapper文件的位置,第一个位置不需要斜杠，classpath表示从resources开始
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
