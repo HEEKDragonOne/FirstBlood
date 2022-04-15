@@ -2,7 +2,7 @@
 ![](https://img-blog.csdnimg.cn/e96c7ae561684f83a611631d1b24ca8f.png)
 
 # FirstBlood
-一个基于SpringBoot+Vue3实现的前后端分离后台管理系统。此项目从无到有大概花费的有效时间在一周左右。从没有使用过Mybatis到使用Mybatis-Plus；从听说Element-UI到使用Element-Plus；从摸索过Vue到使用Vue3；从没有接触过SpringBoot（只学过Spring但并没有使用过，没有学过SpringMVC），到利用SpringBoot+Vue写出此项目，前后花费的有效时间应该也在一周左右。在学习的过程中确实让自己也成长了很多，踩了很多坑但也收获到了很多。
+一个基于SpringBoot+Vue3实现的前后端分离后台管理系统。在学习的过程中让自己也成长了很多，踩了很多坑但也收获到了很多。
 
 ## 设计知识点
 
