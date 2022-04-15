@@ -86,7 +86,7 @@ MySQL：8.0
 
 用户表：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ffa0e1b19e51407cb47e5f5af3b2f581.pngr)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/ffa0e1b19e51407cb47e5f5af3b2f581.png)
 
 
 角色表：
