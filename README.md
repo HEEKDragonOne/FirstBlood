@@ -1,3 +1,6 @@
+
+![](https://img-blog.csdnimg.cn/e96c7ae561684f83a611631d1b24ca8f.png)
+
 # FirstBlood
 一个基于SpringBoot+Vue3实现的前后端分离后台管理系统。
 
