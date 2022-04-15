@@ -2,7 +2,7 @@
 ![](https://img-blog.csdnimg.cn/e96c7ae561684f83a611631d1b24ca8f.png)
 
 # FirstBlood
-一个基于SpringBoot+Vue3实现的前后端分离后台管理系统。
+一个基于SpringBoot+Vue3实现的前后端分离后台管理系统。此项目从无到有大概花费的有效时间在一周左右。从没有接触过SpringBoot，到利用SpringBoot+Vue写出此项目，前后花费的有效时间应该也在一周左右。在学习的过程中自己也成长了很多。
 
 ## 设计知识点
 
