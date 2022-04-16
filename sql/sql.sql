@@ -68,6 +68,7 @@ CREATE TABLE `s_role_menu` (
 
 # 用户表
 # 添加一个超级管理员admin，密码为123456
+
 insert into s_user(user_ID, username, password, role_ID, description) VALUES
 (1000,'admin','7ed917eb25c9fc56499a76bf5adbfa50',2,'超级管理员')
 
