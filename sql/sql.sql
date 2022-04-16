@@ -67,6 +67,10 @@ CREATE TABLE `s_role_menu` (
 ) ENGINE=InnoDB AUTO_INCREMENT=175 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 # 用户表
+# 添加一个超级管理员admin，密码为123456
+insert into s_user(user_ID, username, password, role_ID, description) VALUES
+(1000,'admin','7ed917eb25c9fc56499a76bf5adbfa50',2,'超级管理员')
+
 CREATE TABLE `s_user` (
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '用户唯一标识符',
   `user_ID` bigint NOT NULL COMMENT '用户编号',
