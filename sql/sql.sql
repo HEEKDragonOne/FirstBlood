@@ -21,7 +21,7 @@ CREATE TABLE `s_item` (
   `description` varchar(200) DEFAULT NULL COMMENT '物品描述或备注',
   `item_count` bigint DEFAULT '0' COMMENT '物品数量',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=70 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
 # 物品类型表
@@ -32,7 +32,7 @@ CREATE TABLE `s_item_type` (
    `is_delete` tinyint(1) DEFAULT '0' COMMENT '逻辑删除',
    `description` varchar(250) DEFAULT NULL COMMENT '类型描述',
    PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 # 菜单表
 CREATE TABLE `s_menu` (
@@ -43,7 +43,7 @@ CREATE TABLE `s_menu` (
   `menu_ico` varchar(200) DEFAULT NULL COMMENT '菜单图表',
   `pid` bigint DEFAULT NULL COMMENT '父级菜单id',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 # 借出管理表
 CREATE TABLE `s_record` (
@@ -57,7 +57,7 @@ CREATE TABLE `s_record` (
     `description` varchar(200) DEFAULT NULL COMMENT '描述或备注',
     `getCode` varchar(10) DEFAULT NULL COMMENT '领取码',
     PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 # 角色表
 CREATE TABLE `s_role_menu` (
@@ -65,7 +65,7 @@ CREATE TABLE `s_role_menu` (
    `role_id` bigint DEFAULT NULL COMMENT '角色编号',
    `menu_id` bigint DEFAULT NULL COMMENT '菜单编号',
    PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=175 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 # 用户表
 
@@ -78,7 +78,7 @@ CREATE TABLE `s_user` (
   `description` varchar(250) DEFAULT NULL COMMENT '用户描述',
   `is_delete` tinyint(1) DEFAULT '0' COMMENT '逻辑删除',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 # 用户角色表
 CREATE TABLE `s_user_role` (
@@ -88,7 +88,7 @@ CREATE TABLE `s_user_role` (
    `is_delete` tinyint(1) DEFAULT '0' COMMENT '逻辑删除',
    `description` varchar(250) DEFAULT NULL COMMENT '角色描述',
    PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
 
