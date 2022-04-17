@@ -24,7 +24,7 @@ MySQL：8.0
 - 关于登录时报错空指针问题：原因在于插入数据时，每一条的数据的id字段不是从0开始的，而是从某一个数开始的。所以我们需要自己手动修改两张表的id字段。一个是s_menu表，将其id字段改为从1开始。第二个是s_user_role表，需要将其id改为role_id，保证id和role_id保持一致即可；修改id和role_id时还需要注意对照role表中的数据。
 
 s_menu表：id字段从1开始排，每一条数据的pid就是其他数据的id。所以修改时需要对应修改。 <br>
-s_user_role表：修改id和role_id一致。但修改role_id的话还需要s_role_menu表中的role_id。所以将初始数据的id改为role_id即可。
+s_user_role表：修改id和role_id一致。但修改role_id的话还需要修改s_role_menu表中的role_id。所以将初始数据的id改为role_id即可。
 
 
 ## 功能截图
