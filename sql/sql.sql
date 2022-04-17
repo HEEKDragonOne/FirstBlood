@@ -67,10 +67,6 @@ CREATE TABLE `s_role_menu` (
 ) ENGINE=InnoDB AUTO_INCREMENT=175 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 # 用户表
-# 添加一个超级管理员admin，密码为123456
-
-insert into s_user(user_ID, username, password, role_ID, description) VALUES
-(1000,'admin','7ed917eb25c9fc56499a76bf5adbfa50',2,'超级管理员')
 
 CREATE TABLE `s_user` (
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '用户唯一标识符',
@@ -92,3 +88,59 @@ CREATE TABLE `s_user_role` (
    `description` varchar(250) DEFAULT NULL COMMENT '角色描述',
    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+
+
+
+# 初始数据添加
+
+
+# 菜单表
+insert into s_menu(menu_name, menu_path, menu_ico, pid) VALUES
+('物品管理',null,'IconMenu',null),
+('权限设置',null,'Lock',null),
+('系统设置',null,'Setting',null),
+('物品列表','/itemShow','List',1),
+('物品类型','/itemType','Tickets',1),
+('角色管理','/role','User',2),
+('人员管理','/mans','Avatar',2),
+('修改密码','/pwd','Key',3),
+('个人密码','/perPwd','User',3),
+('借出管理','/recordShow','Document',1),
+('数据展示','/lookData','Calendar',1);
+
+# 菜单权限表
+insert into s_role_menu(role_id, menu_id) VALUES
+(2,1),
+(2,2),
+(2,3),
+(2,4),
+(2,5),
+(2,6),
+(2,7),
+(2,8),
+(2,9),
+(2,10),
+(2,11);
+
+
+# 创建用户角色
+insert into s_user_role(role_id, rolename,description) VALUES
+(2,'超级管理员','拥有最高权限');
+
+# 创建初始超级管理员admin,角色必须是角色表中已经存在的角色id，密码为123456
+insert into s_user(user_ID, username, password, role_ID, description) VALUES
+(1000,'admin','7ed917eb25c9fc56499a76bf5adbfa50',2,'超级管理员');
+
+# 插入物品类型数据
+insert into s_item_type(type_id, typename, description) VALUES
+(2022001,'测试类','提供测试所用');
+
+# 插入物品数据，物品的类型编号必须是类型表中已经存在的！
+insert into s_item(item_id, name, typeID,size, description, item_count) VALUES
+('111111','测试物品名称',2022001,'这里填写规格','填写物品描述',7);
+
+
+
