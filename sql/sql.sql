@@ -143,4 +143,10 @@ insert into s_item(item_id, name, typeID,size, description, item_count) VALUES
 ('111111','测试物品名称',2022001,'这里填写规格','填写物品描述',7);
 
 
+# 注意：在建好数据库表后，自行查看s_user_role表的id和role_id是否相同，则将role_id修改为id，使两者相同。
+# 注意：再自行查看s_menu表，看数据的id是不是从1开始的，不是则将其改为从1开始。
+
+
+
+
 
