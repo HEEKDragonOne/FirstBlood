@@ -2,6 +2,7 @@
 /*创建数据库*/
 CREATE DATABASE `tothefor` ;
 
+use tothefor;
 /*创建表*/
 # 如果有关数据库的报错问题，多半是数据库的编码问题。将其设置为utf8即可
 
