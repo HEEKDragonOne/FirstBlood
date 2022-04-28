@@ -163,7 +163,7 @@ public class itemTypeController {
         if(StringUtils.hasText(itemname)){
             queryWrapper.like("typename",itemname);
         }
-        queryWrapper.ne("id",1);
+       // queryWrapper.ne("id",1);
         queryWrapper.orderByDesc("id");
         return R.SUCCESS(itemTypeService.page(page, queryWrapper));
     }
