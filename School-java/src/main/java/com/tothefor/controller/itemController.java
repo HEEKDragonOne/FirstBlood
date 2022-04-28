@@ -147,7 +147,7 @@ public class itemController {
     public R getItemTypeCnt(){
         List<ItemType> itemTypes = itemTypeMapper.selectList(null);
         int size = itemTypes.size();
-        size--;
+       // size--;
         return R.SUCCESS(size);
     }
 
